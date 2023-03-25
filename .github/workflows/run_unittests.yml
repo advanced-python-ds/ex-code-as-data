@@ -1,0 +1,25 @@
+name: run unittests
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: installations
+        run: |
+          pip install pipenv
+          pipenv install --dev --ignore-pipfile --deploy
+      - name: run tests
+        run: |
+          pipenv run pytest tests
