@@ -64,7 +64,7 @@ resolved.
 Good luck!
 
 ### Getting the Data
-1. [Set up AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html), if you do not already hav one.
+1. [Set up AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html), if you do not already have one.
 2. [Configure AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 3. Install `make`
    1. Mac
