@@ -82,5 +82,5 @@ Officially, we1 only support Mac and Linux operating systems. If you are on a Wi
 4. Run: `make data`
 5. Now, you should have three data files in `exercise1/`:
    1. `followers.csv`
-   2`likes.csv`
-   3`sentiments.csv
+   2. `likes.csv`
+   3. `sentiments.csv`
