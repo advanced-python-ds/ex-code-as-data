@@ -25,7 +25,7 @@ here:  [https://github.com/advanced-python-ds/ex-code-as-data]()
 
 #### Background
 
-The TikTok account @pazpazthecoder for coding and math gets thousands of views per week. The creator is specifically
+The TikTok account [@pazpazthecoder](https://www.tiktok.com/@pazpazthecoder?lang=en) for coding and math gets thousands of views per week. The creator is specifically
 interested in three reports to track the amount of followers, amount of likes, and average sentiments, per day and per
 county.
 
