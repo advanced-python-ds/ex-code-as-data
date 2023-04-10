@@ -7,9 +7,9 @@ from scipy import stats
 # Step 1: Implement MyEval __init__ method
 class MyEval:
     def __init__(
-            self,
-            grouper_func: Callable[[pd.DataFrame], pd.Series],
-            filter_func: Callable[[pd.Series, Optional[Any]], pd.Series],
+        self,
+        grouper_func: Callable[[pd.DataFrame], pd.Series],
+        filter_func: Callable[[pd.Series, Optional[Any]], pd.Series],
     ):
         """
         :param grouper_func: how to group the data
@@ -30,15 +30,19 @@ class MyEval:
         """
         :return: A string representation of the class instance
         """
-        return f"MyEval instance by " \
-               f"\ngrouper_func: {self.grouper_func}, " \
-               f"\nfilter_func: {self.filter_func}"
+        return (
+            f"MyEval instance by "
+            f"\ngrouper_func: {self.grouper_func}, "
+            f"\nfilter_func: {self.filter_func}"
+        )
 
 
 # Step 3: Implement get_views_by_county function. Use groupby to group df by county.
-def get_views_by_county(df: pd.DataFrame) -> pd.Series:
+def get_values_by_county(df: pd.DataFrame) -> pd.Series:
     """
-    Get the total views per county
+    Get the total values per county;
+    For followers.csv, you should get the total of the followers per county.
+    For likes.csv, you should get the total of the likes per county.
     """
     pass
 
@@ -90,9 +94,12 @@ def execute():
     for name, args in TESTS.items():
         print("Running {}".format(name))
 
-        data = pd.read_csv(None,  # todo: read the csv path from args
-                           parse_dates=['date'])
-        my_eval = MyEval(None, None)  # todo: use 2nd and 3rd objects in args to make a MyEval instance
+        data = pd.read_csv(
+            None, parse_dates=["date"]  # todo: read the csv path from args
+        )
+        my_eval = MyEval(
+            None, None
+        )  # todo: use 2nd and 3rd objects in args to make a MyEval instance
 
         print(my_eval(data))
 
