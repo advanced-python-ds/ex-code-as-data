@@ -7,5 +7,3 @@ print(type(a))
 f = np.sum  # function assignment
 print(f)
 print(type(f))
-
-
