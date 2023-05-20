@@ -1,4 +1,4 @@
-.PHONY: download-data install
+.PHONY: download-data
 
 download-data: day3_tiktok/followers.csv day3_tiktok/likes.csv day3_tiktok/sentiments.csv
 
