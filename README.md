@@ -46,20 +46,7 @@ following specifications:
 
 #### Working with Error Messages
 
-This coding exercise consists of 8 steps total, and understanding error messages towards a successful submission may be
-tricky.
-
-For more informative error messages, walk through the '# Step i: ... '  comments sequentially through the exercise.
-
-A failing step message may look like this:
-
-```
-######### DETAILS: #########
-Step 1.1 Failed. MyEval self.grouper_func attribute isn't set well.
-```
-
-When the step is executed successfully, the error message will change to the next following error, until all errors are
-resolved.
+This coding exercise consists of 9 steps total, with an accompanying test suite that can be found in [evaluate.py](day3_tiktok/evaluate.py) 
 
 Good luck!
 
