@@ -46,7 +46,7 @@ following specifications:
 
 #### Working with Error Messages
 
-This coding exercise consists of 9 steps total, with accompanying test suite that can be found in evaluate.py 
+This coding exercise consists of 9 steps total, with an accompanying test suite that can be found in [evaluate.py](day3_tiktok/evaluate.py) 
 
 Good luck!
 
