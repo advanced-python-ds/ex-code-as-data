@@ -9,16 +9,6 @@ import exercise
 TestCase.maxDiff = None
 
 
-@contextmanager
-def capture_print():
-    _stdout = sys.stdout
-    sys.stdout = StringIO()
-    try:
-        yield sys.stdout
-    finally:
-        sys.stdout = _stdout
-
-
 def dummy_grouper(i: iter, *args, **kwargs):
     pass
 
