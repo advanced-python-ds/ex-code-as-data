@@ -1,4 +1,4 @@
-from typing import Dict, Any
+from typing import Dict, List, Any, Iterable, Callable
 
 import numpy as np
 from pprint import pprint
@@ -37,8 +37,8 @@ FUNCS_NAMES = [
 
 
 def calculate(
-    numbers: iter,
-    *funcs: callable,
+    numbers: Iterable[int],
+    *funcs: Callable[[List[int]], Any],
 ) -> Dict[str, Any]:
     """
     Calculate and store the results for a given range of numbers

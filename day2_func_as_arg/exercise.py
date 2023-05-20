@@ -1,4 +1,4 @@
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Iterable, Callable
 
 import numpy as np
 from pprint import pprint
@@ -37,8 +37,8 @@ FUNCS_NAMES = [
 
 
 def calculate(
-    numbers: iter,
-    *funcs: callable,
+    numbers: Iterable[int],
+    *funcs: Callable[[List[int]], Any],
 ) -> Dict[str, Any]:
     """
     Calculate and store the results for a given range of numbers
@@ -46,7 +46,7 @@ def calculate(
     :param funcs: Functions to execute on the numbers
     :return: A dictionary with keys as function names and values as the results of the function
     """
-    NotImplemented("Implement calculate function")
+    raise NotImplementedError("Implement calculate function")
 
 
 def main():
@@ -54,7 +54,7 @@ def main():
     Given 29 numpy functions, calculate the results for the first 200 natural numbers
     """
     numbers = np.arange(1, 201)
-    functions: List[callable] = [
+    functions: List[Callable[[List[int]], Any]] = [
         np.sum
     ]  # use a loop or a list comprehension to get all functions from the FUNCS_NAMES list
     data = calculate(numbers, *functions)
